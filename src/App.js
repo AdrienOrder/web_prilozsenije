@@ -9,8 +9,6 @@ import Header from './components/Header'; // Импортируем компон
 import Content from './components/Content'; // Импортируем компонент Content
 import Footer from './components/Footer'; // Импортируем компонент Footer
 
-
-
 const App = () => {
     return (
         <BrowserRouter>
