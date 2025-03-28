@@ -78,10 +78,10 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times-New-Roman', sans-serif;
     font-size: 17px;
 }
 
 button:hover {
-    background-color: #ddd; /* Цвет для hover (можно доработать) */
+    background-color: #ddd; /* Цвет для hover*/
 }
