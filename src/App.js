@@ -8,7 +8,7 @@ import FeedbackBlock from './FeedbackBlock'; // Импортируйте Feedbac
 import Header from './components/Header'; // Импортируем компонент Header
 import Content from './components/Content'; // Импортируем компонент Content
 import Footer from './components/Footer'; // Импортируем компонент Footer
-import './styles.css';
+
 
 
 const App = () => {
