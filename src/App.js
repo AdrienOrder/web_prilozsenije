@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom'; // Импортируем BrowserRouter
+import { ThemeProvider } from './ThemeContext'; // Импортируем ThemeProvider
+import { AuthProvider } from './auto/AuthContext'; // Импортируем AuthProvider
+import { FeedbackProvider } from './feedback/FeedbackContext';
+import FeedbackBlock from './FeedbackBlock'; // Импортируйте FeedbackBlock
+import Header from './components/Header'; // Импортируем компонент Header
+import Content from './components/Content'; // Импортируем компонент Content
+import Footer from './components/Footer'; // Импортируем компонент Footer
+import './styles.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <ThemeProvider>
+                <FeedbackProvider>
+                    <AuthProvider>
+                        <Header />
+                        <Content />
+                        <FeedbackBlock />
+                        <Footer />
+                    </AuthProvider>
+                </FeedbackProvider>
+            </ThemeProvider>
+        </BrowserRouter>
+    );
+};
 
 export default App;
