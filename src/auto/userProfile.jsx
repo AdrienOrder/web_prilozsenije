@@ -10,7 +10,7 @@ const UserProfile = () => {
 
     return (
         <div>
-            <h3>User Profile</h3>
+            <h3>Профиль пользователя</h3>
             <p>Email: {userEmail}</p>
         </div>
     );

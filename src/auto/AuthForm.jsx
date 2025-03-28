@@ -6,8 +6,7 @@ import './AuthContainer.css';
 import { useTheme } from '../ThemeContext';
 
 const AuthForm = ({ isLogin, onSwitchToLogin }) => { // принимает два пропса: isLogin (логическое значение, указывающее, 
-// находится ли пользователь 
-// на странице входа) и onSwitchToLogin (функция для переключения между формами входа и регистрации
+// находится ли пользователь на странице входа) и onSwitchToLogin (функция для переключения между формами входа и регистрации
 
     // register: Функция для регистрации полей формы
     // handleSubmit: Функция для обработки отправки формы
@@ -40,7 +39,7 @@ const AuthForm = ({ isLogin, onSwitchToLogin }) => { // принимает дв�
     return (
         <form className={`auth-form ${isDarkTheme ? 'dark' : 'light'}`} onSubmit={handleSubmit(onSubmit)}>
             <div>
-                <label>Email:</label>
+                <label>Электронная почта:</label>
                 <input
                     type="text"
                     {...register('email', {
@@ -54,9 +53,9 @@ const AuthForm = ({ isLogin, onSwitchToLogin }) => { // принимает дв�
                 {errors.email && <span>{errors.email.message}</span>}
             </div>
             <div>
-                <label>Password:</label>
+                <label>Пароль:</label>
                 <input type="password" {...register('password', { required: true })} />
-                {errors.password && <span>This field is required</span>}
+                {errors.password && <span> Это поле тоже обязательно для заполнения</span>}
             </div>
             <button type="submit">{isLogin ? 'Войти' : 'Зарегистрироваться'}</button>
         </form>

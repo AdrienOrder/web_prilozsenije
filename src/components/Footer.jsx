@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer className={`footer ${isDarkTheme ? 'dark' : 'light'}`}>
             <div className="footer-content">
-                <p>&copy; 2025 все права защищены (кроме водительских).</p> {/* Создаёт элемент параграфа, 
+                <p>&copy; 2025 все права защищены (кроме водительских, но это неточно).</p> {/* Создаёт элемент параграфа, 
                 который содержит текст с символом копирайта */}
             </div>
         </footer>
