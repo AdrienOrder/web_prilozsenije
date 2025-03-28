@@ -26,7 +26,7 @@
 }
 
 .auth-container button:hover {
-    background-color: rgb(129, 129, 129); /* Цвет фона кнопки при наведении */
+    background-color: rgb(133, 128, 128); /* Цвет фона кнопки при наведении */
     color: white; /* Белый текст для темной темы */
 }
 
