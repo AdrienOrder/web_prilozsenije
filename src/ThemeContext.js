@@ -22,9 +22,9 @@ export const ThemeProvider = ({ children }) => {
     // Этот эффект будет обновлять стили body в зависимости от текущей темы
     useEffect(() => {
         if (isDarkTheme) {
-            document.body.style.backgroundColor = 'rgba(85, 8, 3, 0.68)'; // Цвет фона для темной темы
+            document.body.style.backgroundColor = 'rgb(54, 6, 2)'; // Цвет фона для темной темы
         } else {
-            document.body.style.backgroundColor ='rgba(227, 167, 3, 0.9)'; // Цвет фона для светлой темы
+            document.body.style.backgroundColor ='rgb(220, 164, 8)'; // Цвет фона для светлой темы
         }
     }, [isDarkTheme]); // Зависимость от isDarkTheme, это означает, что эффект будет повторно выполняться каждый раз, 
     // когда это значение изменяется

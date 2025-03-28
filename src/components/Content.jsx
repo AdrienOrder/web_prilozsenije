@@ -8,7 +8,8 @@ import Counter from './Counter';
 import AuthContainer from '../auto/AuthContainer';
 import UserProfile from '../auto/userProfile';
 
-const labWorks = [ // определяет массив объектов labWorks, где каждый объект представляет собой лабораторную работу с id, именем изображения и заголовком
+const labWorks = [ // определяет массив объектов labWorks, где каждый объект представляет собой лабораторную работу с id, 
+// именем изображения и заголовком
     { id: 1, image: 'laba1.png', caption: 'Лабораторная работа 1' },
     { id: 2, image: 'laba2.png', caption: 'Лабораторная работа 2' },
     { id: 3, image: 'laba3.png', caption: 'Лабораторная работа 3' },
@@ -20,7 +21,8 @@ const labWorks = [ // определяет массив объектов labWork
     { id: 9, image: 'laba9.png', caption: 'Лабораторная работа 9' },
 ];
 
-const LabWork = ({ lab }) => { // пределяет функциональный компонент LabWork, который принимает пропс lab. Этот компонент будет отображать детали конкретной лабораторной работы
+const LabWork = ({ lab }) => { // пределяет функциональный компонент LabWork, который принимает пропс lab. Этот компонент 
+// будет отображать детали конкретной лабораторной работы
     return (
         <div>
             <h3>{lab.caption}</h3>
@@ -39,9 +41,13 @@ const Content = () => {
                 <>
                     <Routes>
                         {labWorks.map((lab) => (
-                            <Route key={lab.id} path={`/lab${lab.id}`} element={<LabWork lab={lab} />} /> // Для каждой лабораторной работы создается компонент Route с уникальным key (идентификатором лабораторной работы), path, который соответствует лабораторной работе (например, /lab1), и element, который рендерит компонент LabWork с текущей лабораторной работой в качестве пропса
+                            <Route key={lab.id} path={`/lab${lab.id}`} element={<LabWork lab={lab} />} /> // Для каждой лабораторной 
+                            // работы создается компонент Route с уникальным key (идентификатором лабораторной работы), path, 
+                            // который соответствует лабораторной работе (например, /lab1), и element, который рендерит компонент 
+                            // LabWork с текущей лабораторной работой в качестве пропса
                         ))}
-                        <Route path="/" element={<LabWork lab={labWorks[0]} />} /> {/* определяет маршрут для корневого пути (/), который рендерит первую лабораторную работу из массива labWorks */}
+                        <Route path="/" element={<LabWork lab={labWorks[0]} />} /> {/* определяет маршрут для корневого пути (/), 
+                        который рендерит первую лабораторную работу из массива labWorks */}
                         <Route path="/counter" element={<Counter />} />
                         <Route path="/profile" element={<UserProfile />} />
                     </Routes>

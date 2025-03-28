@@ -9,7 +9,8 @@ const FeedbackList = () => {
     const { isDarkTheme } = useTheme();
 
     const validFeedbacks = feedbacks.filter(feedback => feedback.name && feedback.feedback); //  создает новый массив, 
-    // отфильтровывая отзывы, которые содержат как имя, так и текст отзыва. Это позволяет исключить некорректные или неполные отзывы
+    // отфильтровывая отзывы, которые содержат как имя, так и текст отзыва. Это позволяет исключить некорректные или 
+    // неполные отзывы
 
     return (
         <div className={`feedback-list ${isDarkTheme ? 'dark' : 'light'}`}> {/* Применение класса для стилей */}
@@ -20,7 +21,8 @@ const FeedbackList = () => {
                 <div key={index} className="feedback-item"> {/* для каждого отзыва создается новый элемент. Значение key={index} 
                 устанавливается для уникальности каждого элемента в списке */}
                     <p className="feedback-name">{feedback.name}:</p> {/* создает элемент параграфа для имени автора отзыва */}
-                    <p>{feedback.feedback}</p> {/* Создает другой элемент для отображения текста отзыва (содержимого поля feedback)*/}
+                    <p>{feedback.feedback}</p> {/* Создает другой элемент для отображения текста отзыва 
+                    (содержимого поля feedback)*/}
                 </div>
             ))}
         </div>

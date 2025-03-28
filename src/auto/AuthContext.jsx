@@ -1,7 +1,8 @@
 // src/auto/AuthContext.jsx
 import React, { createContext, useContext, useState } from 'react';
 
-// createContext: Создает новый контекст, который позволяет передавать данные через дерево компонентов без необходимости передавать их через пропсы
+// createContext: Создает новый контекст, который позволяет передавать данные через дерево компонентов без необходимости 
+// передавать их через пропсы
 // useContext: Позволяет компонентам подписываться на контекст и получать его значение
 // useState: Хук для управления состоянием в функциональных компонентах
 
@@ -10,7 +11,8 @@ const AuthContext = createContext(); // будет использоваться 
 
 export const AuthProvider = ({ children }) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [userEmail, setUserEmail] = useState(""); // будет хранить адрес электронной почты текущего аутентифицированного пользователя, изначально пустое
+    const [userEmail, setUserEmail] = useState(""); // будет хранить адрес электронной почты текущего аутентифицированного 
+    // пользователя, изначально пустое
     const [users, setUsers] = useState({}); // Хранение зарегистрированных пользователей в виде объекта
 
     const login = (email, password) => {

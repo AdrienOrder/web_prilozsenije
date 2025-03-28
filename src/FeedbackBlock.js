@@ -9,7 +9,7 @@ const FeedbackBlock = () => {
 
     return (
         <div className={`feedback-block ${isDarkTheme ? 'dark' : 'light'}`}>
-            <h2>Обратная связь</h2>
+            <h2>Обратная связь (Комментарии)</h2>
             <FeedbackForm />
             <FeedbackList />
         </div>

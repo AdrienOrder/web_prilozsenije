@@ -13,7 +13,7 @@
 }
 
 .auth-container button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times-New-Roman', sans-serif;
     font-size: 17px;
     background-color: #a1a1a1;; /* Цвет фона кнопки */
     color: rgb(44, 44, 44); /* Цвет текста кнопки */
@@ -93,7 +93,7 @@
 }
 
 .auth-form button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times-New-Roman', sans-serif;
     font-size: 17px;
     padding: 10px 20px; /* Внутренние отступы у кнопки */
     background-color: #a1a1a1;; /* Цвет фона кнопки */

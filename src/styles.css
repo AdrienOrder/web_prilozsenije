@@ -1,12 +1,1 @@
 /* styles.css */
-
-body {
-    transition: background-color 0.5s ease, color 0.5s ease; /* Плавный переход для фона и цвета текста */
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-
