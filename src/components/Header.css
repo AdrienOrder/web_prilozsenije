@@ -26,7 +26,7 @@
     right: 20px;
     background-color: #b1b1b1; /* Цвет фона кнопки */
     color: rgb(59, 55, 48); /* Цвет текста кнопки */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times-New-Roman', sans-serif;
     font-size: 17px;
     border: none; /* Убираем рамку */
     border-radius: 5px; /* Скругленные углы */
@@ -47,7 +47,7 @@
     right: 180px;
     background-color: #b1b1b1; /* Цвет фона кнопки */
     color: rgb(59, 55, 48); /* Цвет текста кнопки */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times-New-Roman', sans-serif;
     font-size: 17px;
     border: none; /* Убираем рамку */
     border-radius: 5px; /* Скругленные углы */
@@ -67,7 +67,7 @@
     right: 180px;
     background-color: #b1b1b1; /* Цвет фона кнопки */
     color: rgb(59, 55, 48); /* Цвет текста кнопки */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times-New-Roman', sans-serif;
     font-size: 17px;
     border: none; /* Убираем рамку */
     border-radius: 5px; /* Скругленные углы */
@@ -85,7 +85,7 @@
     position: absolute;
     top: 45px;
     right: 280px;
-    font-family: 'Roboto', sans-serif; /* Задаем шрифт Roboto */
+    font-family: 'Times-New-Roman', sans-serif; /* Задаем шрифт Roboto */
     font-size: 17px;
     margin-left: 10px; /* Отступ слева от других элементов */
     cursor: pointer; /* Курсор при наведении */
@@ -93,5 +93,5 @@
 
 /* Изменение цвета при наведении */
 .user-email:hover {
-    color: rgb(152, 177, 106); /* Здесь замените #ff7f50 на желаемый цвет при наведении */
+    color: rgb(41, 40, 34); /* Здесь замените #ff7f50 на желаемый цвет при наведении */
 }

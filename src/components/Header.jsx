@@ -7,8 +7,10 @@ import '../components/Header.css';
 import { useNavigate } from 'react-router-dom'; // Импортируем для маршрутизации
 
 const Header = () => {
-    const { isDarkTheme, toggleTheme } = useTheme(); // использует хук useTheme для получения текущего состояния темы isDarkTheme и функции для переключения темы toggleTheme
-    const { isAuthenticated, logout, userEmail } = useAuth(); // использует хук useAuth для получения данных о статусе аутентификации пользователя (isAuthenticated), функции выхода (logout) и электронной почте пользователя (userEmail)
+    const { isDarkTheme, toggleTheme } = useTheme(); // использует хук useTheme для получения текущего состояния темы isDarkTheme 
+    // и функции для переключения темы toggleTheme
+    const { isAuthenticated, logout, userEmail } = useAuth(); // использует хук useAuth для получения данных о статусе 
+    // аутентификации пользователя (isAuthenticated), функции выхода (logout) и электронной почте пользователя (userEmail)
     const navigate = useNavigate(); // получаем navigate для навигации
 
     const handleEmailClick = () => {

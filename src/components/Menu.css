@@ -54,7 +54,7 @@
 }
 
 .menu li a {
-    font-family: 'Roboto', sans-serif; /* Используем Roboto */
+    font-family: 'Times-New-Roman', sans-serif; /* Используем Roboto */
     text-decoration: none;
     font-size: 19px; /* Увеличиваем размер шрифта */
     color: inherit; /* Устанавливаем цвет текста в зависимости от родителя */

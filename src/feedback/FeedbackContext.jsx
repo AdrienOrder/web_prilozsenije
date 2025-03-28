@@ -7,7 +7,8 @@ const FeedbackContext = createContext();
 // Создаёт компонент FeedbackProvider, который будет контекстным провайдером для FeedbackContext
 // Принимает children, что позволяет провайдеру оборачивать другие компоненты и предоставлять им доступ к контексту
 export const FeedbackProvider = ({ children }) => {
-    const [feedbacks, setFeedbacks] = useState([]); // Инициализирует состояние feedbacks с помощью хука useState. По умолчанию оно является пустым массивом. setFeedbacks — функция для обновления состояния
+    const [feedbacks, setFeedbacks] = useState([]); // Инициализирует состояние feedbacks с помощью хука useState. 
+    // По умолчанию оно является пустым массивом. setFeedbacks — функция для обновления состояния
 
     // Определяет функцию addFeedback, которая принимает объект отзыва
     // Когда вызывается эта функция, вызывает setFeedbacks, чтобы обновить состояние
@@ -17,7 +18,8 @@ export const FeedbackProvider = ({ children }) => {
     };
 
     //  Возвращает JSX-разметку, где FeedbackContext.Provider оборачивает children. 
-    // Значение, передаваемое через value, включает массив отзывов и функцию для их добавления, чтобы дочерние получили доступ к данным
+    // Значение, передаваемое через value, включает массив отзывов и функцию для их добавления, 
+    // чтобы дочерние получили доступ к данным
     return (
         <FeedbackContext.Provider value={{ feedbacks, addFeedback }}>
             {children}
