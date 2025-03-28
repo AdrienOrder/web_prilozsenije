@@ -17,7 +17,7 @@ export const FeedbackProvider = ({ children }) => {
         setFeedbacks(prevFeedbacks => [...prevFeedbacks, feedback]);
     };
 
-    //  Возвращает JSX-разметку, где FeedbackContext.Provider оборачивает children. 
+    // Возвращает JSX-разметку, где FeedbackContext.Provider оборачивает children. 
     // Значение, передаваемое через value, включает массив отзывов и функцию для их добавления, 
     // чтобы дочерние получили доступ к данным
     return (

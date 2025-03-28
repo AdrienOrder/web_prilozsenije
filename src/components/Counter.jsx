@@ -21,7 +21,7 @@ const Counter = () => { // стрелочная функция, которая �
 
     return (
         <div>
-            <h2>Счетчик: {count}</h2>
+            <h2>Счётчик: {count}</h2>
             <button onClick={increment}>Увеличить</button>
             <button onClick={decrement}>Уменьшить</button>
         </div>
