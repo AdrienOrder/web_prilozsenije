@@ -6,7 +6,7 @@ import { useTheme } from '../ThemeContext';
 
 const menuItems = [ // пределяет массив объектов menuItems, где каждый объект представляет собой элемент 
 // меню с path (путь маршрута) и label (название элемента меню)
-    { path: '/', label: 'Лабораторная работа № 1' },
+    { path: '/lab1', label: 'Лабораторная работа № 1' },
     { path: '/lab2', label: 'Лабораторная работа № 2' },
     { path: '/lab3', label: 'Лабораторная работа № 3' },
     { path: '/lab4', label: 'Лабораторная работа № 4' },
@@ -15,7 +15,7 @@ const menuItems = [ // пределяет массив объектов menuItem
     { path: '/lab7', label: 'Лабораторная работа № 7' },
     { path: '/lab8', label: 'Лабораторная работа № 8' },
     { path: '/lab9', label: 'Лабораторная работа № 9' },
-    { path: '/counter', label: 'Счетчик' },
+    { path: '/counter', label: 'Счётчик' },
 ];
 
 const Menu = () => {
